@@ -8,7 +8,9 @@
     <title>Visually Defined</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Custome css to override default values -->
+    <link href="css/visuallydefine.css" rel="stylesheet" type="text/css"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,124 +24,122 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/bootstrap.min.js"></script>
-    <div class="container">
 
-      <!-- ======================================================================= NAVBAR -->
-      <nav class="navbar navbar-inverse">
-        <!-- Brand and toggle get grouped for better mobile display -->
+    <!-- ======================================================================== HEADER -->
+    <nav class="navbar navbar-inverse" id="navbar">
+      <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#"> <img alt="Brand" src="images/logo.png"> </a>
+          <a class="navbar-brand" href="#"><img alt="Brand" src="images/logo.png"></a>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">Our Blog</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact Us</a></li>
-          <li><h1 navbar-text> Hello Testing </h1></li>
         </ul>
-      </nav>
-
-      <!-- ======================================================================== HEADER -->
-      <div class="jumbotron">
-        <center>
-          <h1>Visually Defined</h1>
-        </center>
-      </div>
+      </div><!-- container-fluid-->
+    </nav>
+    <div class="jumbotron">
+      <center>
+        <h1>Visually Defined</h1>
+        <i>where we expain everything visually</i>
+      </center>
+    </div>
 
       <!-- ======================================================================== BODY -->
-      <div class="row">
+      <div class="container">
         <div class="row">
-          <div class="col-xs-6 col-md-3">
-            <div>
-              <img src="images/thumbnail.png" alt="thumbnail image">
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <div>
+                <img src="images/thumbnail.png" alt="thumbnail image">
+              </div>
+              <div class="label label-default">Default</div>
             </div>
-            <div class="label label-default">Default</div>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <div>
-              <img src="images/thumbnail.png" alt="thumbnail image">
+            <div class="col-xs-6 col-md-3">
+              <div>
+                <img src="images/thumbnail.png" alt="thumbnail image">
+              </div>
+              <div class="label label-primary">Primary</div>
             </div>
-            <div class="label label-primary">Primary</div>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <div>
-              <img src="images/thumbnail.png" alt="thumbnail image">
+            <div class="col-xs-6 col-md-3">
+              <div>
+                <img src="images/thumbnail.png" alt="thumbnail image">
+              </div>
+              <div class="label label-success">Success</div>
             </div>
-            <div class="label label-success">Success</div>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <div>
-              <img src="images/thumbnail.png" alt="thumbnail image">
+            <div class="col-xs-6 col-md-3">
+              <div>
+                <img src="images/thumbnail.png" alt="thumbnail image">
+              </div>
+              <div class="label label-info">Info</div>
             </div>
-            <div class="label label-info">Info</div>
-          </div>
-        </div><!-- ROW-->
-        </br>
+          </div><!-- ROW-->
+          </br>
 
-        <div class="row">
-          <div class="col-xs-6 col-md-3">
-            <div>
-              <img src="images/thumbnail.png" alt="thumbnail image">
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <div>
+                <img src="images/thumbnail.png" alt="thumbnail image">
+              </div>
+              <div class="label label-warning">Warning</div>
             </div>
-            <div class="label label-warning">Warning</div>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <div>
-              <img src="images/thumbnail.png" alt="thumbnail image">
+            <div class="col-xs-6 col-md-3">
+              <div>
+                <img src="images/thumbnail.png" alt="thumbnail image">
+              </div>
+              <div class="label label-danger">Danger</div>
             </div>
-            <div class="label label-danger">Danger</div>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <div>
-              <img src="images/thumbnail.png" alt="thumbnail image">
+            <div class="col-xs-6 col-md-3">
+              <div>
+                <img src="images/thumbnail.png" alt="thumbnail image">
+              </div>
+              <div class="label label-info">Info</div>
             </div>
-            <div class="label label-info">Info</div>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <div>
-              <img src="images/thumbnail.png" alt="thumbnail image">
+            <div class="col-xs-6 col-md-3">
+              <div>
+                <img src="images/thumbnail.png" alt="thumbnail image">
+              </div>
+              <div class="label label-info">Info</div>
             </div>
-            <div class="label label-info">Info</div>
-          </div>
-        </div><!-- ROW-->
-        </br>
+          </div><!-- ROW-->
+          </br>
 
-        <div class="row">
-          <div class="col-xs-6 col-md-3">
-            <div>
-              <img src="images/thumbnail.png" alt="thumbnail image">
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <div>
+                <img src="images/thumbnail.png" alt="thumbnail image">
+              </div>
+              <div class="label label-warning">Warning</div>
             </div>
-            <div class="label label-warning">Warning</div>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <div>
-              <img src="images/thumbnail.png" alt="thumbnail image">
+            <div class="col-xs-6 col-md-3">
+              <div>
+                <img src="images/thumbnail.png" alt="thumbnail image">
+              </div>
+              <div class="label label-danger">Danger</div>
             </div>
-            <div class="label label-danger">Danger</div>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <div>
-              <img src="images/thumbnail.png" alt="thumbnail image">
+            <div class="col-xs-6 col-md-3">
+              <div>
+                <img src="images/thumbnail.png" alt="thumbnail image">
+              </div>
+              <div class="label label-info">Info</div>
             </div>
-            <div class="label label-info">Info</div>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <div>
-              <img src="images/thumbnail.png" alt="thumbnail image">
+            <div class="col-xs-6 col-md-3">
+              <div>
+                <img src="images/thumbnail.png" alt="thumbnail image">
+              </div>
+              <div class="label label-info">Info</div>
             </div>
-            <div class="label label-info">Info</div>
-          </div>
+          </div><!-- ROW-->
+          </br>
         </div><!-- ROW-->
-        </br>
-      </div><!-- ROW-->
+      </div><!-- container -->
 
-      <!-- ======================================================================== FOOTER -->
+      <!-- ======================================================================== FOOTER
       <footer>
         <p>Author: Avi Mehenwal</p>
         <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
       </footer>
-
-    <div><!-- /.container -->
+      -->
   </body>
 </html>

@@ -1,3 +1,3 @@
-# Visually Explain
+# Visually Defined
 
-Explaining visually
+Defining things in visual way.
