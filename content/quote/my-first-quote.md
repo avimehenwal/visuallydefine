@@ -4,7 +4,7 @@ description = ""
 image = "/images/image1.jpg"
 title = "my first quote"
 type = "quote"
-
+draft = false
 +++
 
 This is example post on __quotes__

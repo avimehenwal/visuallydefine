@@ -4,6 +4,7 @@ description = ""
 image = "/images/image2.jpg"
 title = "my second quote"
 type = "quote"
+draft = false
 
 +++
 
