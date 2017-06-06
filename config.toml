@@ -1,0 +1,5 @@
+baseURL = "http://visuallydefine.com/"
+languageCode = "en-us"
+title = "Visually Defined | Visually Define"
+theme = "visuallydefine1"
+disqusShortname = "devopscreed"
