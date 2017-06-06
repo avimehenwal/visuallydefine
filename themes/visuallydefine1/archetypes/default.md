@@ -1,2 +1,5 @@
 +++
+image = ""
+description = ""
+type = "quote"
 +++

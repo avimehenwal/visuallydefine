@@ -1,0 +1,24 @@
+{{ partial "header.html" . }}
+
+{{ .Data.Pages }}
+{{ .Site.AllPages }}
+</br>
+</br>
+
+<section>
+  <div>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <h3> All quotes </h3></br>
+      </li>
+      {{ range .Data.Pages }}
+        <li class="list-group-item">
+          <a href={{ .Permalink }}>{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+
+{{ partial "footer.html" . }}
+

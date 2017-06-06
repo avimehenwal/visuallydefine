@@ -1,0 +1,30 @@
+{{ partial "header.html" . }}
+
+<section>
+  <div class="row">
+    <h1>
+      <center>
+      {{ .Title }}
+      </center>
+    </h1>
+
+    <div>
+      <figure>
+        <img src={{ .Params.image }} alt="my first quote image"/>
+      </figure>
+    </div>
+
+    <div>
+      {{ .Date }}
+    </div>
+    </br>
+
+    <div>
+      {{ .Content }}
+    </div>
+    </br>
+
+  </div>
+</section>
+
+{{ partial "footer.html" . }}
