@@ -1,4 +1,4 @@
-baseURL = "http://visuallydefine.com/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Visually Defined | Visually Define"
 theme = "visuallydefine1"
