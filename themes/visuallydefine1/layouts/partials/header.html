@@ -18,13 +18,24 @@
     <nav class="navbar navbar-inverse" id="navbar">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="http://visuallydefine.com"><img alt="Brand logo" src="/images/logo.png"></a>
+          <a class="navbar-brand" href={{ .Site.BaseURL }}><img alt="Brand logo" src="/images/logo.png"></a>
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
+          <li class="active"><a href={{ .Site.BaseURL }}>Home</a></li>
+
+          {{ $sections := where (.Site.Pages) "Kind" "section" }}
+          {{ range $sections  }}
+            <li>
+              <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
+          {{ end }}
+
+          <!-- To do dynamic links
           <li><a href="#">Our Blog</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact Us</a></li>
+          -->
+
         </ul>
       </div><!-- container-fluid-->
     </nav>

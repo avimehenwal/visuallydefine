@@ -8,13 +8,13 @@
 <section>
   <div>
     <ul class="list-group">
-      <li class="list-group-item">
-        <h3> All quotes </h3></br>
+      <li class="list-group-item list-group-item-warning">
+        <h3> All {{ .Section}} : Table of Contents </h3></br>
       </li>
-      {{ range .Data.Pages }}
-        <li class="list-group-item">
-          <a href={{ .Permalink }}>{{ .Title }}</a>
-        </li>
+      {{ range .Data.Pages.ByPublishDate }}
+        <a href={{ .Permalink }} class="list-group-item list-group-item-info">
+          {{ .Title }}   {{ .PublishDate.Format "Mon, Jan 2, 2006" }}
+        </a>
       {{ end }}
     </ul>
   </div>
