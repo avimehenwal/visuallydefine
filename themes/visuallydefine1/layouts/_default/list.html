@@ -1,7 +1,7 @@
 {{ define "main"}}
   <section class="w3-panel w3-border w3-margin">
     <h3> {{.Type | upper}} Page </h3>
-    <ui>
+    <ui class="w3-ul">
       {{range .Pages}}
         <li><a href="{{.URL}}">{{.Title}}</a></li>
       {{end}}

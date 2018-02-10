@@ -2,16 +2,18 @@
 <html>
   {{partial "head.html" . }}
 <body>
+  {{ partial "header.html" .}}
 
-  <div class="w3-container w3-blue">
-    <h1> Visually Define </h1><hr>
-    <ul>
+  <div class="w3-container w3-brown w3-round w3-margin w3-center">
+    <ul class="w3-ul">
         {{range .Site.Sections}}
-        <li class="w3-border">
+        <li class="w3-hover-yellow">
           <a href="{{.URL}}">{{.Title | upper}}</a></li>
         {{end}}
     </ul>
   </div>
+
+  {{ partial "footer.html" . }}
 
 </body>
 </html>
