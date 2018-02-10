@@ -1,47 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- meta tags partial -->
-
-    <title>{{ .Site.Title }}</title>
-
-    <!-- importable links as partial -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
-    <!-- Custome css to override default values -->
-    <link href="/css/visuallydefine.css" rel="stylesheet" type="text/css"/>
-  </head>
-  <body>
-
-    <nav class="navbar navbar-inverse" id="navbar">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href={{ .Site.BaseURL }}><img alt="Brand logo" src="/images/logo.png"></a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href={{ .Site.BaseURL }}>Home</a></li>
-
-          {{ $sections := where (.Site.Pages) "Kind" "section" }}
-          {{ range $sections  }}
-            <li>
-              <a href="{{ .Permalink }}index.html">{{ .Title }}</a>
-            </li>
-          {{ end }}
-
-          <!-- To do dynamic links
-          <li><a href="#">Our Blog</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          -->
-
-        </ul>
-      </div><!-- container-fluid-->
-    </nav>
-    <div class="jumbotron">
-      <center>
-        <h1>Visually Defined</h1>
-        <i>where we expain everything visually</i>
-      </center>
-    </div>
+<header>
+  <div class="w3-container w3-blue">
+    <h1> Visually Define </h1><hr>
+  </div>
+</header>

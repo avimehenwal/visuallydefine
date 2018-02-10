@@ -1,24 +1,10 @@
-{{ partial "header.html" . }}
-
-{{ .Data.Pages }}
-{{ .Site.AllPages }}
-</br>
-</br>
-
-<section>
-  <div>
-    <ul class="list-group">
-      <li class="list-group-item list-group-item-warning">
-        <h3> All {{ .Section}} : Table of Contents </h3></br>
-      </li>
-      {{ range .Data.Pages.ByPublishDate }}
-        <a href={{ .Permalink }} class="list-group-item list-group-item-info">
-          {{ .Title }}   {{ .PublishDate.Format "Mon, Jan 2, 2006" }}
-        </a>
-      {{ end }}
+{{ define "main"}}
+  <section class="w3-panel w3-border w3-margin">
+    <h3> {{.Type | upper}} Page </h3>
+    <ui>
+      {{range .Pages}}
+        <li><a href="{{.URL}}">{{.Title}}</a></li>
+      {{end}}
     </ul>
-  </div>
-</section>
-
-{{ partial "footer.html" . }}
-
+  </section>
+{{end}}

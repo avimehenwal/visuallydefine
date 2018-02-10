@@ -1,5 +1,11 @@
-baseURL = "/"
+baseURL = "https://visuallydefine.com/"
 languageCode = "en-us"
-title = "Visually Defined | Visually Define"
+title = "Visually Define"
 theme = "visuallydefine1"
 disqusShortname = "devopscreed"
+googleAnalytics   = "UA-113741959-2"
+publishDir = "docs"
+
+
+[params]
+  description = "visuallydefine by avimehenwal"         # Max 160 characters show in search

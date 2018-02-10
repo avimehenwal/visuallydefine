@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quotes on Visually Define</title>
+    <link>https://visuallydefine.com/quote/</link>
+    <description>Recent content in Quotes on Visually Define</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Jun 2017 09:13:27 +0530</lastBuildDate>
+    
+	<atom:link href="https://visuallydefine.com/quote/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>my second quote</title>
+      <link>https://visuallydefine.com/quote/my-second-quote/</link>
+      <pubDate>Tue, 06 Jun 2017 09:13:27 +0530</pubDate>
+      
+      <guid>https://visuallydefine.com/quote/my-second-quote/</guid>
+      <description>Hello GUys</description>
+    </item>
+    
+    <item>
+      <title>my first quote</title>
+      <link>https://visuallydefine.com/quote/my-first-quote/</link>
+      <pubDate>Tue, 06 Jun 2017 06:30:12 +0530</pubDate>
+      
+      <guid>https://visuallydefine.com/quote/my-first-quote/</guid>
+      <description>This is example post on quotes</description>
+    </item>
+    
+  </channel>
+</rss>

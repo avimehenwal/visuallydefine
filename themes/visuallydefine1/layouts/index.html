@@ -1,83 +1,17 @@
-{{ partial "header.html" . }}
+<!DOCTYPE html>
+<html>
+  {{partial "head.html" . }}
+<body>
 
-    <div class="container">
-      <div class="row">
-        <div class="row">
-          <div class="col-xs-12 col-md-3">
-            <div>
-              <img src="images/image1.jpg" alt="thumbnail image">
-            </div>
-          </div>
-          <div class="col-xs12 col-md-3">
-            <div>
-              <img src="images/image2.jpg" alt="thumbnail image">
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-3">
-            <div>
-              <img src="images/image3.jpg" alt="thumbnail image">
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-3">
-            <div>
-              <img src="images/image4.jpg" alt="thumbnail image">
-            </div>
-          </div>
-        </div><!-- ROW-->
-        </br>
+  <div class="w3-container w3-blue">
+    <h1> Visually Define </h1><hr>
+    <ul>
+        {{range .Site.Sections}}
+        <li class="w3-border">
+          <a href="{{.URL}}">{{.Title | upper}}</a></li>
+        {{end}}
+    </ul>
+  </div>
 
-        <div class="row">
-          <div class="col-xs-12 col-md-3">
-            <div>
-              <img src="images/image5.jpg" alt="thumbnail image">
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-3">
-            <div>
-              <img src="images/image6.jpg" alt="thumbnail image">
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-3">
-            <div>
-              <img src="images/image7.jpg" alt="thumbnail image">
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-3">
-            <div>
-              <img src="images/image8.jpg" alt="thumbnail image">
-            </div>
-          </div>
-        </div><!-- ROW-->
-        </br>
-
-        <div class="row">
-          <div class="col-xs-12 col-md-3">
-            <div>
-              <img src="images/thumbnail.png" alt="thumbnail image">
-            </div>
-            <div class="label label-warning">Warning</div>
-          </div>
-          <div class="col-xs-12 col-md-3">
-            <div>
-              <img src="images/thumbnail.png" alt="thumbnail image">
-            </div>
-            <div class="label label-danger">Danger</div>
-          </div>
-          <div class="col-xs-12 col-md-3">
-            <div>
-              <img src="images/thumbnail.png" alt="thumbnail image">
-            </div>
-            <div class="label label-info">Info</div>
-          </div>
-          <div class="col-xs-12 col-md-3">
-            <div>
-              <img src="images/thumbnail.png" alt="thumbnail image">
-            </div>
-            <div class="label label-info">Info</div>
-          </div>
-        </div><!-- ROW-->
-        </br>
-      </div><!-- ROW-->
-    </div><!-- container -->
-
-{{ partial "footer.html" . }}
+</body>
+</html>
