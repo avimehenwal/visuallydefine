@@ -1,7 +1,6 @@
 +++
 title = "Des Teufels liebstes Möbelstück ist die lange Bank."
 date = 2018-02-11T15:02:46+05:30
-draft = true
 type = "quote"
 
 image = ""

@@ -1,7 +1,6 @@
 +++
 title = "Aller Anfang ist schwer."
-date  = "2018-02-09T15:02:46+05:30"
-draft  = true
+date  = "2018-02-11T18:27:38+05:30"
 type = "quote"
 
 image  = ""
@@ -13,7 +12,6 @@ bg-colour  = "yellow"
 text-font  = ""
 text-size  = ""
 +++
-
 
 All beginnings are hard.
 <!--more-->
