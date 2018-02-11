@@ -1,15 +1,16 @@
 +++
-title = ""
-date = {{ .Date }}
-draft = true
-type = "quote"
+title        = "{{ replace .TranslationBaseName "-" " " | title }}"
+date         = {{ .Date }}
+lastmod      = {{ .Date }}
+publishDate  = ""
+draft        = true
+type         = "quote"
+weight       = "100"
+description  = ""
 
-image = ""
-author = "Anonymous"
-source = ""
-weight = "100"
-symbol = ""
-bg-colour = "yellow"
-text-font = ""
-text-size = ""
+translation  = ""
+details      = ""
+author       = "Anonymous"
+source       = ""
+image        = ""
 +++

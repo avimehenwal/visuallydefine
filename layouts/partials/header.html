@@ -1,24 +1,36 @@
 <header>
-  <div class="w3-container w3-bar w3-blue">
-    <h1><center> Visually Define </center></h1>
+  <div class="w3-bar w3-blue">
+    <h1 class="w3-bar-item"><center>Visually Define<center></h1>
+
+    <div class="w3-bar-item w3-right">
+      <a href="{{.Site.Params.author_url}}">
+        <img src="/images/VideoCameraHeadReadingBook3-300x268.jpg" alt="Person Learning"
+        class="w3-image w3-hover-opacity w3-circle" style="width:80px">
+      </a>
+    </div>
   </div>
 </header>
 
 <!-- sidebar nav menu -->
 <div class="w3-sidebar w3-bar-block w3-purple" style="width:25%">
-  <img src="/images/VideoCameraHeadReadingBook3-300x268.jpg" alt="Person Learning" class="w3-bar-item w3-hover-opacity w3-circle">
   <br>
-
   {{ $currentPage := . }}
   {{ range .Site.Menus.main }}
-    <a href="{{.URL}}" class="w3-bar-item w3-button w3-hover-green">{{.Name}}</a>
+    {{ if .Pre }}
+      <a href="{{.URL}}" class="w3-bar-item w3-button w3-hover-green">
+        {{.Pre}}      {{.Name}}</a>
+    {{else}}
+      <a href="{{.URL}}" class="w3-bar-item w3-button w3-hover-green">{{.Name}}</a>
+    {{end}}
   {{end}}
 
   <!-- Add subitems to submenu -->
   <hr>
   {{ $currentPag := . }}
   {{ range where .Site.Pages "Section" $currentPag.Type }}
-     <a href="{{.URL}}" class="w3-bar-item w3-button w3-hover-yellow">{{.Title | truncate 15}}</a>
+     <a href="{{.URL}}" class="w3-bar-item w3-button w3-hover-yellow"
+     title="{{.Description}}">
+       {{.Description | truncate 15}}</a>
   {{end}}
 
 </div>
