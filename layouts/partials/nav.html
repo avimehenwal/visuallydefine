@@ -4,10 +4,10 @@
   {{ $currentPage := . }}
   {{ range .Site.Menus.main }}
     {{ if .Pre }}
-      <a href="{{.URL}}" class="w3-bar-item w3-button w3-hover-green">
+      <a href="{{.URL}}" class="w3-bar-item w3-button w3-hover-yellow">
         {{.Pre}}      {{.Name}}</a>
     {{else}}
-      <a href="{{.URL}}" class="w3-bar-item w3-button w3-hover-green">{{.Name}}</a>
+      <a href="{{.URL}}" class="w3-bar-item w3-button w3-hover-yellow">{{.Name}}</a>
     {{end}}
   {{end}}
 
