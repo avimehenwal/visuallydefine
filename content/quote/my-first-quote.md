@@ -1,10 +1,26 @@
 +++
-date = "2017-06-06T06:30:12+05:30"
-description = ""
-image = "/images/image1.jpg"
-title = "my first quote"
+title = "Aller Anfang ist schwer."
+date  = "2018-02-09T15:02:46+05:30"
+draft  = true
 type = "quote"
-draft = false
+
+image  = ""
+author  = "Anonymous"
+source  = ""
+weight  = "100"
+symbol  = ""
+bg-colour  = "yellow"
+text-font  = ""
+text-size  = ""
 +++
 
-This is example post on __quotes__
+
+All beginnings are hard.
+<!--more-->
+
+No matter what you are undertaking in life, whether it’s learning a new language,
+embarking on a career or working on a project, if you start something from scratch,
+you will suck at it at first. That’s part of the natural order and the way it should be.
+Don’t worry too much about it and just keep at it until you get it right.
+
+https://www.fluentu.com/blog/german/learn-german-proverbs/

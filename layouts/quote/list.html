@@ -1,0 +1,27 @@
+{{ define "main"}}
+
+<br>
+<div class="w3-card-4 w3-animate-right">
+  <header class="w3-container w3-light-green">
+    <h1> German Quotes</h1>
+  </header>
+
+  <ul class="w3-ul">
+    {{ range first 4 .Data.Pages }}
+      <li class="w3-hover-blue"><a href="{{ .URL }}">
+        <article>
+          <h4><i> {{ .Title }} </i></h4>
+          {{ .Summary }}
+          {{ if .Truncated }}
+          <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+            <div>
+              <a href="{{ .URL }}">Read More…</a>
+            </div>
+          {{ end }}
+         </article>
+      </a></li>
+    {{ end }}
+  </ui>
+</div>
+
+{{end}}

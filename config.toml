@@ -1,11 +1,9 @@
 baseURL = "https://visuallydefine.com/"
 languageCode = "en-us"
 title = "Visually Define"
-theme = "visuallydefine1"
+sectionPagesMenu = "main"             # For lazy bloggers only sections
 disqusShortname = "devopscreed"
 googleAnalytics   = "UA-113741959-2"
-publishDir = "docs"
-sectionPagesMenu = "main"             # For lazy bloggers only sections
 
 [[menu.main]]
     name = "Home"
@@ -13,11 +11,13 @@ sectionPagesMenu = "main"             # For lazy bloggers only sections
     weight = -110
     identifier = "home"
     url = "/"
-[[menu.main]]
-    name = "About"
-    pre = "<i class='fa fa-road'></i>"
-    weight = -100
-    url = "/"
+# [[menu.main]]
+#     name = "About"
+#     pre = "<i class='fa fa-road'></i>"
+#     weight = -100
+#     url = "/"
 
 [params]
-  description = "visuallydefine by avimehenwal"         # Max 160 characters show in search
+    description = "visuallydefine by avimehenwal"         # Max 160 characters show in search
+    author = "Avi Mehenwal"
+    author_url = "https://avimehenwal.in/"

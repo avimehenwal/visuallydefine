@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+ {{ block "head" . }} {{partial "head.html" . }} {{end}}
+
+  <body>
+    {{ partial "header.html" . }}
+
+    <!-- 25% left reserved for nav menu  -->
+    <div class="w3-container" style="margin-left:25%">
+      {{ block "main" .   }}
+      {{ end }}
+      {{ partial "footer.html" . }}
+    </div>
+
+  </body>
+
+</html>
