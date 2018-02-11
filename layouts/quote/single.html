@@ -6,7 +6,8 @@
     <header class="w3-row">
       <p class=" w3-large w3-serif">
       <i class="fa fa-quote-right w3-jumbo w3-text-red w3-col s1"></i>
-      <h1 class="w3-col s10 w3-center"><i>{{.Description}}</i></h1>
+      <h1 class="w3-col s10 w3-center" style="text-shadow:1px 1px 0 #444">
+      <i>{{.Description}}</i></h1>
       <i class="fa fa-quote-left w3-jumbo w3-text-red w3-col s1"></i>
       </p>
       {{ if .Params.author}}
@@ -15,7 +16,9 @@
       {{end}}
     </header>
     <h3>{{.Params.translation}}</h3>
-    {{.Content}}
+    <h3 style="font-family: 'Dancing Script', cursive;">
+      {{.Content}}
+    </h3>
   </article>
 </div>
 

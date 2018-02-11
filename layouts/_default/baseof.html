@@ -3,10 +3,11 @@
  {{ block "head" . }} {{partial "head.html" . }} {{end}}
 
   <body>
-    {{ partial "header.html" . }}
+    {{ partial "nav.html" . }}
 
     <!-- 25% left reserved for nav menu  -->
     <div class="w3-container" style="margin-left:25%">
+      {{ partial "header.html" . }}
       {{ block "main" .   }}
       {{ end }}
       {{ partial "footer.html" . }}

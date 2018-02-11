@@ -6,12 +6,12 @@
     <h1> German Quotes - Zitate</h1>
   </header>
 
-  <ul class="w3-ul">
+  <ul class="w3-ul w3-text-deep-purple">
     {{/* range first 4 .Data.Pages */}}
     {{ range .Data.Pages }}
       <li class="w3-hover-yellow">
         <a href="{{ .URL }}">
-          <h3>{{ .Description }}</h3>
+          <h3><i>{{ .Description }}</i></h3>
         </a>
       </li>
     {{ end }}

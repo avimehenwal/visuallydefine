@@ -1,5 +1,5 @@
-<header>
-  <div class="w3-bar w3-blue">
+<header style="top:75%">
+  <div class="w3-panel w3-bar w3-blue w3-round-large">
     <h1 class="w3-bar-item"><center>Visually Define<center></h1>
 
     <div class="w3-bar-item w3-right">
@@ -10,27 +10,3 @@
     </div>
   </div>
 </header>
-
-<!-- sidebar nav menu -->
-<div class="w3-sidebar w3-bar-block w3-purple" style="width:25%">
-  <br>
-  {{ $currentPage := . }}
-  {{ range .Site.Menus.main }}
-    {{ if .Pre }}
-      <a href="{{.URL}}" class="w3-bar-item w3-button w3-hover-green">
-        {{.Pre}}      {{.Name}}</a>
-    {{else}}
-      <a href="{{.URL}}" class="w3-bar-item w3-button w3-hover-green">{{.Name}}</a>
-    {{end}}
-  {{end}}
-
-  <!-- Add subitems to submenu -->
-  <hr>
-  {{ $currentPag := . }}
-  {{ range where .Site.Pages "Section" $currentPag.Type }}
-     <a href="{{.URL}}" class="w3-bar-item w3-button w3-hover-yellow"
-     title="{{.Description}}">
-       {{.Description | truncate 15}}</a>
-  {{end}}
-
-</div>
