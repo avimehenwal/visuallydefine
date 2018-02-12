@@ -1,7 +1,6 @@
 +++
 title        = "Anfang"
 date         = 2018-02-12T21:30:45+05:30
-draft        = true
 type         = "wortschatz"
 description  = "der Anfang, -e Anfänge"
 

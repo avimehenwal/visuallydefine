@@ -1,7 +1,6 @@
 +++
 title = "Ubung"
 date = 2018-02-12T18:45:42+05:30
-draft = true
 description = "der Übung,-en"
 type = "wortschatz"
 

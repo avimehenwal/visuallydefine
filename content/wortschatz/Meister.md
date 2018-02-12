@@ -1,7 +1,6 @@
 +++
 title        = "Meister"
 date         = 2018-02-12T21:18:29+05:30
-draft        = true
 type         = "wortschatz"
 description  = "der Meister, -"
 
@@ -13,7 +12,7 @@ tags         = ["Noun"]
 categories   = ["Deutsch", "German"]
 +++
 
-#### der Meister, die Meister
+#### der Meister | die Meister
 
 the master, expert
 
