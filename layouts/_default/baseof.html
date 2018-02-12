@@ -4,12 +4,13 @@
   <body>
     <div class="w3-row">
       <!-- Left Menu bar  -->
-      <div class="w3-mobile w3-sidebar w3-bar-block w3-quarter w3-left {{.Site.Params.nav_bg}}">
+      <div class="w3-sidebar w3-bar-block w3-quarter w3-left {{.Site.Params.nav_bg}}"
+        id="mySidebar">
         {{ partial "nav.html" . }}
       </div>
 
       <!-- Right content section  -->
-      <div class="w3-container w3-mobile w3-threequarter w3-right w3-theme-l5">
+      <div class="w3-container w3-theme-l5 w3-threequarter w3-right" id="main">
         {{ partial "header.html" . }}
         {{ block "main" .   }}
         {{ end }}
