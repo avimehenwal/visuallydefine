@@ -1,0 +1,14 @@
+<!-- Previous and Next post buttons -->
+{{ with .PrevInSection }}
+  <a href="{{ .Permalink }}"
+    class="w3-button w3-round-large w3-theme-d4 w3-large w3-ripple w3-left">
+    <i class="fa fa-arrow-left"></i> <b>PREVIOUS</b>
+  </a>
+{{ end }}
+
+{{ with .NextInSection }}
+  <a href="{{ .Permalink }}"
+    class="w3-button w3-round-large w3-theme-d4 w3-large w3-ripple w3-right">
+    <strong>NEXT</strong> <i class="fa fa-arrow-right"></i>
+  </a>
+{{ end }}

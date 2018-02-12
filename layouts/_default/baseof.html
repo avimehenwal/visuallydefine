@@ -12,8 +12,7 @@
       <!-- Right content section  -->
       <div class="w3-container w3-theme-l5 w3-threequarter w3-right" id="main">
         {{ partial "header.html" . }}
-        {{ block "main" .   }}
-        {{ end }}
+        {{ block "main" .   }} {{ end }}
         {{ partial "footer.html" . }}
       </div>
     </div>
