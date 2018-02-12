@@ -6,7 +6,7 @@ type         = "wortschatz"
 description  = ""
 
 e_meaning    = ""
-image        = ""
+image        = "images/"
 d_meaning    = ""
 author       = ""
 tags         = []
