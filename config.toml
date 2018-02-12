@@ -21,3 +21,6 @@ googleAnalytics   = "UA-113741959-2"
     description = "visuallydefine by avimehenwal"         # Max 160 characters show in search
     author = "Avi Mehenwal"
     author_url = "https://avimehenwal.in/"
+    theme = "green"   # red, pink, purple,deep-purple,indigo,blue,cyan,teal, green,yelow,amber,orange,grey,brown
+    hover = "yellow"
+    nav_bg = "w3-teal"
