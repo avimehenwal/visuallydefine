@@ -23,7 +23,7 @@
   {{ range where .Site.Pages "Section" $currentPag.Type }}
      <a href="{{.URL}}" class="w3-bar-item w3-button w3-ripple {{$hover}}"
        title="{{.Description}}">
-       {{.Description | truncate 15}}
+       {{.Description | truncate 20}}
      </a>
   {{end}}
 

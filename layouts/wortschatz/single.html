@@ -1,0 +1,45 @@
+{{ define "main" }}
+{{ partial "prev-next.html" . }}
+
+<!-- Wortschatz Card -->
+<div class="w3-container">
+<article class="w3-panel w3-card-4 w3-theme-l3 w3-animate-right">
+  <header class="w3-row">
+    <p class=" w3-large w3-serif">
+      <i class="fa fa-book w3-jumbo w3-text-red w3-col s1"></i>
+      <h1 class="w3-col s10 w3-center" style="text-shadow:1px 1px 0 #444">
+        {{.Description}}
+      </h1>
+      <i class="fa fa-book w3-jumbo w3-text-red w3-col s1"></i>
+    </p>
+    {{ if .Params.e_meaning}}
+      <h2 class="w3-row w3-center w3-text-red"><i>{{.Params.e_meaning}}</i></h2>
+    {{end}}
+  </header>
+  <hr>
+
+  <!-- Body with examples, image, meanings, tags -->
+  <div class="w3-row">
+    <div class="w3-half w3-left">
+      <ul class="w3-ul">
+      {{range.Params.tags}}
+        <li class="w3-btn w3-round-xxlarge w3-red">{{.}}</li>
+      {{end}}
+      </ul>
+      <div>
+        {{.Content}}
+      </div>
+    </div><!-- end w3-half -->
+    <div class="w3-half w3-right">
+      {{ if .Params.image}}
+        <img src="{{.Params.image}}" alt="{{.Params.e_meaning}}">
+      {{end}}
+      <div class="w3-container">
+        <p class="w3-center">{{.Params.e_meaning}}</p>
+      </div>
+    </div><!-- end w3-half -->
+  </div><!-- end w3-row -->
+
+</article>
+</div>
+{{end}}
