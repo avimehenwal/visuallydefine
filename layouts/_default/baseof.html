@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
  {{ block "head" . }} {{partial "head.html" . }} {{end}}
-
   <body>
-    {{ partial "nav.html" . }}
+    <div class="w3-row">
+      <!-- Left Menu bar  -->
+      <div class="w3-mobile w3-sidebar w3-bar-block w3-quarter w3-left {{.Site.Params.nav_bg}}">
+        {{ partial "nav.html" . }}
+      </div>
 
-    <!-- 25% left reserved for nav menu  -->
-    <div class="w3-container w3-theme-l5" style="margin-left:25%">
-      {{ partial "header.html" . }}
-      {{ block "main" .   }}
-      {{ end }}
-      {{ partial "footer.html" . }}
+      <!-- Right content section  -->
+      <div class="w3-container w3-mobile w3-threequarter w3-right w3-theme-l5">
+        {{ partial "header.html" . }}
+        {{ block "main" .   }}
+        {{ end }}
+        {{ partial "footer.html" . }}
+      </div>
     </div>
-
   </body>
-
 </html>
