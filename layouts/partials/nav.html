@@ -1,13 +1,16 @@
 <!-- sidebar nav menu -->
-<div class="w3-sidebar w3-bar-block w3-purple" style="width:25%">
+
+{{ $hover := printf "w3-hover-%s" .Site.Params.hover }}
+
+<div class="w3-sidebar w3-bar-block {{.Site.Params.nav_bg}}" style="width:25%">
   <br>
   {{ $currentPage := . }}
   {{ range .Site.Menus.main }}
     {{ if .Pre }}
-      <a href="{{.URL}}" class="w3-bar-item w3-button w3-hover-yellow  w3-ripple">
+      <a href="{{.URL}}" class="w3-bar-item w3-button w3-ripple {{$hover}}">
         {{.Pre}}      {{.Name}}</a>
     {{else}}
-      <a href="{{.URL}}" class="w3-bar-item w3-button w3-hover-yellow w3-ripple">
+      <a href="{{.URL}}" class="w3-bar-item w3-button w3-ripple {{$hover}}">
         {{.Name}}    <i class="fa fa-caret-down"></i>
       </a>
     {{end}}
@@ -16,12 +19,13 @@
   <!-- Add subitems to submenu -->
   {{ $currentPag := . }}
   {{ range where .Site.Pages "Section" $currentPag.Type }}
-     <a href="{{.URL}}" class="w3-bar-item w3-button w3-hover-yellow w3-ripple"
+     <a href="{{.URL}}" class="w3-bar-item w3-button w3-ripple {{$hover}}"
        title="{{.Description}}">
        {{.Description | truncate 15}}
      </a>
   {{end}}
 </div>
+
 
   <!-- Accordion -->
   <!-- <button onclick="myFunction('Demo1')" class="w3-btn w3-bar-item w3-hover-red">
