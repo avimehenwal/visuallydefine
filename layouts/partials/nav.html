@@ -1,8 +1,10 @@
-<!-- sidebar nav menu -->
-
+<!-- Generate hiver class from config value -->
 {{ $hover := printf "w3-hover-%s" .Site.Params.hover }}
 
-<div class="w3-sidebar w3-bar-block {{.Site.Params.nav_bg}}" style="width:25%">
+<button class="w3-bar-item w3-button w3-large" onclick="w3_close()">
+  Close &times;
+</button>
+
   <br>
   {{ $currentPage := . }}
   {{ range .Site.Menus.main }}
@@ -24,8 +26,6 @@
        {{.Description | truncate 15}}
      </a>
   {{end}}
-</div>
-
 
   <!-- Accordion -->
   <!-- <button onclick="myFunction('Demo1')" class="w3-btn w3-bar-item w3-hover-red">

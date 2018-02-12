@@ -1,8 +1,23 @@
 {{ define "main" }}
 
-<br>
-<div class="w3-container w3-animate-right">
-  <article class="w3-panel w3-card-4 w3-theme-l3">
+<!-- Previous and Next post buttons -->
+{{ with .PrevInSection }}
+  <a href="{{ .Permalink }}"
+    class="w3-button w3-round-large w3-theme-d4 w3-large w3-ripple w3-left">
+    <i class="fa fa-arrow-left"></i> <b>PREVIOUS</b>
+  </a>
+{{ end }}
+
+{{ with .NextInSection }}
+  <a href="{{ .Permalink }}"
+    class="w3-button w3-round-large w3-theme-d4 w3-large w3-ripple w3-right">
+    <strong>NEXT</strong> <i class="fa fa-arrow-right"></i>
+  </a>
+{{ end }}
+
+<!-- Zitat Card -->
+<div class="w3-container">
+  <article class="w3-panel w3-card-4 w3-theme-l3 w3-animate-right">
     <header class="w3-row">
       <p class=" w3-large w3-serif">
       <i class="fa fa-quote-right w3-jumbo w3-text-red w3-col s1"></i>
@@ -21,5 +36,4 @@
     </h2>
   </article>
 </div>
-
 {{ end }}
