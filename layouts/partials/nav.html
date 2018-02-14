@@ -1,21 +1,36 @@
 <!-- Generate hover class from config value -->
 {{ $hover := printf "w3-hover-%s" .Site.Params.hover }}
 
-<button class="w3-bar-item w3-button w3-large" onclick="w3_close()">
-  Close  <i class="fa fa-times"></i>
-</button>
-<br>
+<div class="w3-bar">
+  <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">
+    Close  <i class="fa fa-times"></i>
+  </button>
+  <br>
+  {{ $currentPage := . }}
+  {{ range .Site.Menus.sidebar.ByWeight }}
+    <!-- Presenting main-menus -->
+    <a class="w3-bar-item w3-button w3-ripple {{$hover}} {{if or ($currentPage.IsMenuCurrent "sidebar" .) ($currentPage.HasMenuCurrent "sidebar" .) }}w3-red{{end}}"
+      href="{{ .URL }}"
+      {{if .Identifier}}
+        title="{{.Identifier}}">
+      {{else}}
+        title="{{.Name}}">
+      {{end}}
 
-{{ $currentPage := . }}
-{{ range .Site.Menus.sidebar.ByWeight }}
-  <a class="w3-bar-item w3-button w3-ripple {{$hover}} {{if or ($currentPage.IsMenuCurrent "sidebar" .) ($currentPage.HasMenuCurrent "sidebar" .) }}w3-red{{end}}"
-  href="{{ .URL }}" title="{{ .Name }}">
-  {{if .Post}}
-    {{.Pre}} {{.Name}} {{.Post}}
-  {{else}}
-    {{.Pre}} {{.Name}}
+      {{if .Post}}
+        {{.Pre}} {{.Name}} {{.Post}}
+      {{else}}
+        {{.Pre}} {{.Name}}
+      {{end}}
+    </a>
+  {{end}} <!-- range .Site.Menus.sidebar.ByWeight-->
+
+  <!-- Todo: Context aware. Accorded subitems to submenu -->
+  {{ $currentPag := . }}
+  {{ range where .Site.Pages "Section" $currentPag.Type }}
+     <a href="{{.URL}}" class="w3-bar-item w3-button w3-ripple {{$hover}}"
+       title="{{.Description}}">
+       {{.Description | truncate 20}}
+     </a>
   {{end}}
-  </a>
-{{end}}
-
-<!-- Todo: Accorded Sidebar Menu. Children aware  -->
+</div> <!-- end - w3-bar -->
