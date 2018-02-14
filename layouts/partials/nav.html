@@ -1,24 +1,31 @@
-<!-- Generate hiver class from config value -->
+<!-- Generate hover class from config value -->
 {{ $hover := printf "w3-hover-%s" .Site.Params.hover }}
 
-<button class="w3-bar-item w3-button w3-large" onclick="w3_close()">
-  Close &times;
-</button>
-
+<div class="w3-bar">
+  <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">
+    Close  <i class="fa fa-times"></i>
+  </button>
   <br>
   {{ $currentPage := . }}
-  {{ range .Site.Menus.main }}
-    {{ if .Pre }}
-      <a href="{{.URL}}" class="w3-bar-item w3-button w3-ripple {{$hover}}">
-        {{.Pre}}      {{.Name}}</a>
-    {{else}}
-      <a href="{{.URL}}" class="w3-bar-item w3-button w3-ripple {{$hover}}">
-        {{.Name}}    <i class="fa fa-caret-down"></i>
-      </a>
-    {{end}}
-  {{end}}
+  {{ range .Site.Menus.sidebar.ByWeight }}
+    <!-- Presenting main-menus -->
+    <a class="w3-bar-item w3-button w3-ripple {{$hover}} {{if or ($currentPage.IsMenuCurrent "sidebar" .) ($currentPage.HasMenuCurrent "sidebar" .) }}w3-red{{end}}"
+      href="{{ .URL }}"
+      {{if .Identifier}}
+        title="{{.Identifier}}">
+      {{else}}
+        title="{{.Name}}">
+      {{end}}
 
-  <!-- Add subitems to submenu -->
+      {{if .Post}}
+        {{.Pre}} {{.Name}} {{.Post}}
+      {{else}}
+        {{.Pre}} {{.Name}}
+      {{end}}
+    </a>
+  {{end}} <!-- range .Site.Menus.sidebar.ByWeight-->
+
+  <!-- Todo: Context aware. Accorded subitems to submenu -->
   {{ $currentPag := . }}
   {{ range where .Site.Pages "Section" $currentPag.Type }}
      <a href="{{.URL}}" class="w3-bar-item w3-button w3-ripple {{$hover}}"
@@ -26,29 +33,4 @@
        {{.Description | truncate 20}}
      </a>
   {{end}}
-
-  <!-- Accordion -->
-  <!-- <button onclick="myFunction('Demo1')" class="w3-btn w3-bar-item w3-hover-red">
-    Quotes  <i class="fa fa-caret-down"></i>
-  </button>
-  <div id="Demo1" class="w3-container w3-hide">
-    {{ range where .Site.Pages "Section" "quote" }}
-       <a href="{{.URL}}" class="w3-bar-item w3-button w3-hover-yellow"
-         title="{{.Description}}">
-         {{.Description | truncate 15}}
-       </a>
-    {{end}}
-  </div>
-
-
-<!-- Click action javascript -->
-<!-- <script>
-function myFunction(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script> -->
+</div> <!-- end - w3-bar -->

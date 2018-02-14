@@ -3,12 +3,12 @@ title        = "{{ replace .TranslationBaseName "-" " " | title }}"
 date         = {{ .Date }}
 draft        = true
 type         = "wortschatz"
-description  = ""
+description  =
 
-e_meaning    = ""
+e_meaning    =
 image        = "images/"
-d_meaning    = ""
-author       = ""
+d_meaning    =
+author       = 
 tags         = []
 categories   = ["Deutsch", "German"]
 +++

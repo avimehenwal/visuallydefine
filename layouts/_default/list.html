@@ -1,10 +1,25 @@
 {{ define "main"}}
-  <section class="w3-panel w3-border w3-margin">
-    <h3> {{.Type | upper}} Page </h3>
-    <ui class="w3-ul">
-      {{range .Pages}}
-        <li><a href="{{.URL}}">{{.Title}}</a></li>
-      {{end}}
-    </ul>
-  </section>
+{{ partial "paginator.html" . }}
+
+<!-- List page display -->
+{{ $hover := printf "w3-hover-%s" .Site.Params.hover }}
+
+<div class="w3-card-4 w3-animate-right">
+  <header class="w3-container w3-green">
+    <h1>{{.Page.Title}}</h1>
+  </header>
+
+  <ul class="w3-ul w3-text-deep-orange">
+    {{ range .Paginator.Pages }}
+      <li class="{{$hover}}">
+        <a href="{{ .URL }}">
+          <h1 style="font-family: 'Dancing Script', cursive;">
+            {{.Description}}
+          </h1>
+        </a>
+      </li>
+    {{ end }}
+  </ui>
+</div>
+
 {{end}}
