@@ -6,6 +6,17 @@ paginatePath      = "page"
 disqusShortname   = "visuallydefine"
 googleAnalytics   = "UA-113741959-2"
 
+# GLOBALS
+[params]
+    description = "visuallydefine by avimehenwal"         # Max 160 characters show in search
+    author      = "Avi Mehenwal"
+    author_url  = "https://avimehenwal.in/"
+    theme       = "green"   # red, pink, purple,deep-purple,indigo,blue,cyan,teal, green,yelow,amber,orange,grey,brown
+    hover       = "yellow"
+    nav_bg      = "w3-teal"
+    banner      = "VideoCameraHeadReadingBook3-300x268.jpg"  #"vd-banner-1.svg"
+
+# MENU-BAR
 [[menu.sidebar]]
     name       = "Home"
     pre        = "<i class='fa fa-home'></i>"
@@ -25,11 +36,9 @@ googleAnalytics   = "UA-113741959-2"
     weight     = 60
     identifier = "wortschatz"
     url        = "/wortschatz/"
-
-[params]
-    description = "visuallydefine by avimehenwal"         # Max 160 characters show in search
-    author      = "Avi Mehenwal"
-    author_url  = "https://avimehenwal.in/"
-    theme       = "green"   # red, pink, purple,deep-purple,indigo,blue,cyan,teal, green,yelow,amber,orange,grey,brown
-    hover       = "yellow"
-    nav_bg      = "w3-teal"
+[[menu.sidebar]]
+    name       = "About"
+    pre        = "<i class='fa fa-info-circle'></i>  "
+    weight     = 70
+    identifier = "about"
+    url        = "/about/info/"
