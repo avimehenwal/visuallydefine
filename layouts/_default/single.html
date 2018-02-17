@@ -1,4 +1,25 @@
 {{ define "main" }}
+
   <h1>{{ .Title }}</h1>
   {{ .Content }}
+
+  <!-- Photo Gallery from Resources -->
+  {{ if .Resources}}
+  <div class="w3-row-padding w3-margin-top">
+    {{ range .Resources.Match "*.jpg" }}
+      <div class="w3-third">
+        <div class="w3-card">
+          {{ with .Resize "400x" }}
+            <img src="{{.RelPermalink }}"  style="width:100%">
+            <div class="w3-container">
+              <h5>{{.Name}}</h5>
+            </div>
+          {{end}}
+        </div>
+      </div>
+    {{ end }}
+  </div> <!-- w3-row-padding -->
+  {{end}}
+
+
 {{ end }}
