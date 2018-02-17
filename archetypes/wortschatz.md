@@ -8,7 +8,7 @@ description  =
 e_meaning    =
 image        = "images/"
 d_meaning    =
-author       = 
-tags         = []
+author       =
+tags         = []                     # Noun, Verb, Adjactive, Adverb
 categories   = ["Deutsch", "German"]
 +++
