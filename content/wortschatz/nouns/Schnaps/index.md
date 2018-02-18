@@ -16,7 +16,7 @@ categories   = ["Deutsch", "German"]
 liquor, booze, spirit
 
 ## Examples
-1. [Dienst ist Dienst]({{< relref "Dienst.md" >}}) und [Schnaps ist Schnaps]({{< relref "Schnaps.md" >}}).
+1. [Dienst ist Dienst]({{< relref "wortschatz/nouns/Dienst/index.md" >}}) und [Schnaps ist Schnaps]({{< relref "quote/22.md" >}}).
 2. Die werden mich zum Schnaps einladen.
 3. Strand und Schnaps!
 4. Weil ich an Schnaps gewöhnt bin.
