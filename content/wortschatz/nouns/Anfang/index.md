@@ -5,7 +5,6 @@ type         = "wortschatz"
 description  = "der Anfang, -e Anfänge"
 
 e_meaning    = "start, beginning, inception"
-image        = "images/Anfang.jpg"
 d_meaning    = ""
 author       = ""
 tags         = ["Noun"]

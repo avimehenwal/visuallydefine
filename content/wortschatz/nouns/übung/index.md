@@ -5,7 +5,6 @@ description = "der Übung,-en"
 type = "wortschatz"
 
 e_meaning = "exercise, practise"
-image = "images/ubung.jpg"
 d_meaning = ""
 author = ""
 tags = ["Noun"]

@@ -17,7 +17,7 @@ categories   = ["Deutsch", "German"]
 service, duty, work, employment
 
 ## Examples
-1. [Dienst ist Dienst]({{< relref "22.md" >}}) und [Schnaps ist Schnaps.]({{< relref "Schnaps.md" >}})
+1. [Dienst ist Dienst]({{< relref "quote/22.md" >}}) und [Schnaps ist Schnaps.]({{< relref "wortschatz/nouns/Schnaps/index.md" >}})
 2. außer Dienst
 3. höherer Dienst
 4. Netzwerk-Dienst

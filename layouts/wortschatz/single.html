@@ -31,9 +31,27 @@
       </div>
     </div><!-- end w3-half -->
     <div class="w3-half w3-right">
-      {{ if .Params.image}}
-        <img src="{{.Params.image}}" alt="{{.Params.e_meaning}}" style="max-width:400px">
+
+      <!-- VD Images -->
+      {{ if .Resources}}
+        <div class="w3-row-padding w3-margin-top">
+        {{ range .Resources.ByType "image" }}
+          <div class="w3-half w3-bottombar w3-leftbar w3-topbar w3-rightbar w3-hover-border-yellow">
+              {{ with .Resize "200x" }}
+                <a href="{{.RelPermalink}}">
+                  <img src="{{.RelPermalink}}" alt="{{.Params.e_meaning}}">
+                </a>
+              {{end}}
+          </div>
+        {{ end }}
+        </div>
       {{end}}
+
+      <!-- Images from static folder -->
+      {{ if .Params.image}}
+        <img src="{{.Params.image}}" alt="{{.Params.e_meaning}}" style="max-width:200px">
+      {{end}}
+
       <div class="w3-container">
         <p class="w3-center">{{.Params.e_meaning}}</p>
       </div>
@@ -43,6 +61,7 @@
 </article>
 </div>
 
-{{ template "_internal/disqus.html" . }}
 
+
+{{ template "_internal/disqus.html" . }}
 {{end}}
