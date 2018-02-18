@@ -5,7 +5,6 @@ type         = "wortschatz"
 description  = "der Schnaps, die Schnäpse"
 
 e_meaning    = "liquor, booze, spirit"
-image        = "images/Schnaps.jpg"
 d_meaning    = ""
 author       = ""
 tags         = []

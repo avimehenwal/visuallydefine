@@ -6,7 +6,6 @@ description  = "schwer"
 
 e_meaning    = "Heavy, difficult"
 d_meaning    = ""
-image        = "images/schwer.jpeg"
 author       = ""
 tags         = ["Adjective"]                     # Noun, Verb, Adjective, Adverb
 categories   = ["Deutsch", "German"]

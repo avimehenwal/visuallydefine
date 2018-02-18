@@ -5,7 +5,6 @@ type         = "wortschatz"
 description  = "der Meister, -"
 
 e_meaning    = "master"
-image        = "images/master.jpeg"
 d_meaning    = ""
 author       = ""
 tags         = ["Noun"]
