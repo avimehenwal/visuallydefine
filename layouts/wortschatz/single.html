@@ -32,7 +32,7 @@
     </div><!-- end w3-half -->
     <div class="w3-half w3-right">
       {{ if .Params.image}}
-        <img src="{{.Params.image}}" alt="{{.Params.e_meaning}}" style="max-width:400px">
+        <img src="{{.Params.image}}" alt="{{.Params.e_meaning}}" style="width:400px">
       {{end}}
       <div class="w3-container">
         <p class="w3-center">{{.Params.e_meaning}}</p>
@@ -43,6 +43,15 @@
 </article>
 </div>
 
-{{ template "_internal/disqus.html" . }}
+<!-- Resource List -->
+{{ if .Resources}}
+  <div class="w3-ul w3-theme-d3">
+  {{ range .Resources }}
+    <li> {{ . | jsonify}} </li>
+  {{ end }}
+  </div>
+{{end}}
 
+
+{{ template "_internal/disqus.html" . }}
 {{end}}
