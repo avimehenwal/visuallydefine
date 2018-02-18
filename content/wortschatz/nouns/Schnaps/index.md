@@ -7,7 +7,7 @@ description  = "der Schnaps, die Schnäpse"
 e_meaning    = "liquor, booze, spirit"
 d_meaning    = ""
 author       = ""
-tags         = []
+tags         = ["Noun"]
 categories   = ["Deutsch", "German"]
 +++
 
