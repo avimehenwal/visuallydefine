@@ -26,5 +26,9 @@
   </div> <!-- w3-row-padding -->
   {{end}}
 
+  <!-- ANIMATION WIDGET -->
+  {{ if eq .Params.widget "animation"}}
+    {{ partial "animation.html" .}}
+  {{ end }}
 
 {{ end }}
