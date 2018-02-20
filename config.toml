@@ -15,6 +15,7 @@ googleAnalytics   = "UA-113741959-2"
     hover       = "yellow"
     nav_bg      = "w3-teal"
     banner      = "VideoCameraHeadReadingBook3-300x268.jpg"  #"vd-banner-1.svg"
+    subscribe   = "http://eepurl.com/dlqpQX"
 
 # MENU-BAR
 [[menu.sidebar]]
