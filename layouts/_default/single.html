@@ -3,6 +3,11 @@
   <h1>{{ .Title }}</h1>
   {{ .Content }}
 
+  <!-- WIDGETS -->
+  {{ if eq .Params.widget "form"}}
+    {{ partial "contactus-form.html" .}}
+  {{ end }}
+
   <!-- Photo Gallery from Resources -->
   {{ if .Resources}}
   <div class="w3-row-padding w3-margin-top">
