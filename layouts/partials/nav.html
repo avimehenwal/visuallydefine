@@ -5,6 +5,7 @@
   <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">
     Close  <i class="fa fa-times"></i>
   </button>
+
   <br>
   {{ $currentPage := . }}
   {{ range .Site.Menus.sidebar.ByWeight }}
@@ -33,4 +34,7 @@
        {{.Description | truncate 20}}
      </a>
   {{end}}
+
+  {{partial "search.html" .}}
+
 </div> <!-- end - w3-bar -->

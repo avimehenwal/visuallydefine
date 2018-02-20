@@ -6,4 +6,5 @@ type = ""
 
 image = ""
 author = ""
+widget = ""
 +++
