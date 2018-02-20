@@ -11,7 +11,7 @@ googleAnalytics   = "UA-113741959-2"
     description = "visuallydefine by avimehenwal"         # Max 160 characters show in search
     author      = "Avi Mehenwal"
     author_url  = "https://avimehenwal.in/"
-    theme       = "green"   # red, pink, purple,deep-purple,indigo,blue,cyan,teal, green,yelow,amber,orange,grey,brown
+    theme       = "brown"   # red, pink, purple,deep-purple,indigo,blue,cyan,teal, green,yelow,amber,orange,grey,brown
     hover       = "yellow"
     nav_bg      = "w3-teal"
     banner      = "VideoCameraHeadReadingBook3-300x268.jpg"  #"vd-banner-1.svg"
@@ -43,6 +43,12 @@ googleAnalytics   = "UA-113741959-2"
     weight     = 70
     identifier = "about"
     url        = "/about/info/"
+[[menu.sidebar]]
+    name       = "Experiments"
+    pre        = "<i class='fa fa-magic'></i>"
+    weight     = 79
+    identifier = "experiments"
+    url        = "/test/"
 [[menu.sidebar]]
     name       = "Contact Us"
     pre        = "<i class='fa fa-comment'></i>"
