@@ -5,7 +5,7 @@ description = "About Page"
 
 image = ""
 author = "avimehenwal"
-widget = "form"
+widget = ""
 +++
 
 #### Greeetings !

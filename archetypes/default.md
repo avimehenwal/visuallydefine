@@ -2,7 +2,7 @@
 title = "{{ replace .TranslationBaseName "-" " " | title }}"
 date = {{ .Date }}
 description = ""
-type = "quote"
+type = ""
 
 image = ""
 author = ""

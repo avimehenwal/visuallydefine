@@ -37,8 +37,14 @@ googleAnalytics   = "UA-113741959-2"
     identifier = "wortschatz"
     url        = "/wortschatz/"
 [[menu.sidebar]]
-    name       = "About"
-    pre        = "<i class='fa fa-info-circle'></i>  "
+    name       = "About Us"
+    pre        = "<i class='fa fa-info-circle'></i>"
     weight     = 70
     identifier = "about"
     url        = "/about/info/"
+[[menu.sidebar]]
+    name       = "Contact Us"
+    pre        = "<i class='fa fa-comment'></i>"
+    weight     = 80
+    identifier = "contact-us"
+    url        = "/contact-us/"
