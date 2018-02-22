@@ -1,10 +1,10 @@
 +++
-title = "{{ replace .TranslationBaseName "-" " " | title }}"
-date = {{ .Date }}
+date        = {{ .Date }}
+lang        = "de"
+title       = "{{ replace .TranslationBaseName "-" " " | title }}"
 description = ""
-type = ""
 
-image = ""
-author = ""
-widget = ""
+image       = ""
+author      = "avimehenwal"
+widget      = ""
 +++

@@ -1,5 +1,5 @@
 baseURL           = "https://visuallydefine.com/"
-title             = "Visually Define"
+title             = "Learn german at Visually Define | avimehenwal"
 languageCode      = "en-us"
 paginate          = 5
 paginatePath      = "page"
@@ -8,7 +8,7 @@ googleAnalytics   = "UA-113741959-2"
 
 # GLOBALS
 [params]
-    description = "visuallydefine by avimehenwal"         # Max 160 characters show in search
+    description = "Popular german Quotes, Phrases and Idioms in german for beginners | visually define"
     author      = "Avi Mehenwal"
     author_url  = "https://avimehenwal.in/"
     theme       = "brown"   # red, pink, purple,deep-purple,indigo,blue,cyan,teal, green,yelow,amber,orange,grey,brown
@@ -37,6 +37,13 @@ googleAnalytics   = "UA-113741959-2"
     weight     = 60
     identifier = "wortschatz"
     url        = "/wortschatz/"
+[[menu.sidebar]]
+    name       = "Phrases"
+    pre        = "<i class='fa fa-bullhorn'></i>"
+    post       = "<i class='fa fa-caret-down'></i>"
+    weight     = 69
+    identifier = "phrase"
+    url        = "/phrase/"
 [[menu.sidebar]]
     name       = "About Us"
     pre        = "<i class='fa fa-info-circle'></i>"

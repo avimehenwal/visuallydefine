@@ -1,6 +1,22 @@
 <!-- Head and SEO infromation -->
 <head>
-  <title> {{ .Site.Title}} </title>
+  <!--SEO Enhancements  -->
+  <title>
+    {{if .Page.Title}}
+      {{.Page.Title}}
+    {{else}}
+      {{ .Site.Title}}
+    {{end}}
+  </title>
+  {{ if .Page.Description }}
+    <meta name="keywords"    content="{{.Page.Description}}">
+    <meta name="description" content="{{.Page.Description}}">
+  {{else}}
+    <meta name="keywords"    content="{{.Site.Params.description}}">
+    <meta name="description" content="{{.Site.Params.description}}">
+  {{ end }}
+
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <meta name="HandheldFriendly" content="True">
@@ -11,10 +27,6 @@
   {{ .Hugo.Generator }}  <!-- <meta name="generator" content="Hugo 0.18" /> -->
   <base href="{{ .Site.BaseURL }}">
 
-  {{ if .Site.Params.description }}
-    <meta name="keywords"    content="{{.Site.Params.description}}">
-    <meta name="description" content="{{.Site.Params.description}}">
-  {{ end }}
 
   <link rel="stylesheet" href="css/visuallydefine.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">

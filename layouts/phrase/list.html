@@ -1,0 +1,24 @@
+{{ define "main"}}
+
+<!-- List page display -->
+{{ $hover := printf "w3-hover-%s" .Site.Params.hover }}
+
+<div class="w3-card-4 w3-animate-right">
+  <header class="w3-container w3-theme-d3">
+    <h1>{{.Section | upper}}</h1>
+  </header>
+
+  <ul class="w3-ul w3-text-theme">
+    {{ range .Data.Pages }}
+      <li class="{{$hover}}">
+        <a href="{{ .URL }}">
+          <h1 style="font-family: 'Dancing Script', cursive;">
+            {{.Title}}
+          </h1>
+        </a>
+      </li>
+    {{ end }}
+  </ui>
+</div>
+
+{{end}}
